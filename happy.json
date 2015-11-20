@@ -1,0 +1,14 @@
+{
+  "sleep": true,
+  "wants": "breakfast",
+  "questions": "this just has a bunch of double quotes",
+  "object": {
+    "this is an object": true,
+    "hello": "hello",
+    "fave_num": 8,
+    "end_object": "ok"
+  },
+  "more stuff": "this catches errors",
+  "boolean": false,
+  "JSON is nice": true
+}

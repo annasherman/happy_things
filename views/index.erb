@@ -1,0 +1,36 @@
+<h1>Index wooo</h1>
+
+<section>
+  <article class="row">
+    <div class="col-md-6">
+      <img src = "happy_bird.jpg">
+      <h1>Hey  welcome!</h1>
+      <h2>happy thing h2</h2>
+
+    </div>
+    <div class="cold-md-6">
+      <h3>this is an h3</h3>
+      <h4>this is an h4</h4>
+
+    </div>
+
+    <div class="cold-md-6">
+      <h3>Happy Things</h2>
+        <div id = "happy_things">
+
+        </div>
+      <h3>Kittens</h3>
+    </div>
+  </article>
+</section>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $.getJSON("/api", function(data) {
+    for (var item in data){
+      $('#happy_things').append("<li>" + data[item] + "</li>")
+    };
+  });
+});
+
+</script>
