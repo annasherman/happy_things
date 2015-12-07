@@ -4,13 +4,13 @@ window.onload=function(){
 
 
 $.ajax({
-  url: 'http://api.worldbank.org/countries/indicators/2.0.hoi.Int?per_page=10&date=1960:2015&format=json',
+  url: 'https://api.worldbank.org/countries/indicators/2.0.hoi.Int?per_page=10&date=1960:2015&format=json&callback=?',
   type: 'get',
   dataType: 'jsonp',
 })
-.done(function(data) {
+.done(function(json) {
   console.log("success");
-  console.table(data);
+  console.table(json);
 })
 .fail(function() {
   console.log("error");
