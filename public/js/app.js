@@ -6,7 +6,7 @@ window.onload=function(){
 $.ajax({
   url: 'https://api.worldbank.org/countries/indicators/2.0.hoi.Int?per_page=10&date=1960:2015',
   type: 'get',
-  dataType: 'jsonp',
+  dataType: 'json',
 })
 .done(function(data) {
   console.log("success");
