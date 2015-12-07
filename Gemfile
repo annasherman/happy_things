@@ -5,3 +5,4 @@ gem "json"
 gem 'sinatra-cross_origin'
 gem "httparty"
 gem "pry"
+gem "cors"
